@@ -1,0 +1,17 @@
+{
+    "name": "Gesture-PAJ7620",
+    "version": "1.0.0",
+    "description": "Gesture Extension For PAJ7620",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "Gesture.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
