@@ -62,7 +62,7 @@ enum EFGesture {
 }
 
 
-//% weight=10 color=#0fbc11 icon="\uf108" block="gesture"
+//% weight=10 color=#00ffe9 icon="\uf121" block="Gesture"
 namespace gesture {
     const gestureEventId = 3100;
     let lastGesture = EFGesture.None;
