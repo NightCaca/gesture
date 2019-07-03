@@ -66,7 +66,6 @@ enum EFGesture {
 namespace gesture {
     const gestureEventId = 3100;
     let lastGesture = EFGesture.None;
-    let paj7620 = new PAJ7620();    
     let distanceBackup: number = 0;
     /**
      * Do something when a gesture is detected by PAJ7620 - Gesture
@@ -76,7 +75,7 @@ namespace gesture {
     //% blockId=gefesture_create_event block="on Gesture|%gesture"
     export function onGesture(gesture: EFGesture, handler: Action) {
         control.onEvent(gestureEventId, gesture, handler);
-        //if (!paj7620) {
+		  let paj7620 = new PAJ7620();    
             paj7620.init();
             control.inBackground(() => {
                 while (true) {
@@ -88,7 +87,6 @@ namespace gesture {
                     basic.pause(50);
                 }
             })
-        //}
     }
 
 
