@@ -66,7 +66,7 @@ enum EFGesture {
 namespace gesture {
     const gestureEventId = 3100;
     let lastGesture = EFGesture.None;
-    let paj7620: PAJ7620 = 0;
+    let paj7620: PAJ7620 = null;
     let distanceBackup: number = 0;
     /**
      * Do something when a gesture is detected by PAJ7620 - Gesture
