@@ -76,7 +76,7 @@ namespace gesture {
     //% blockId=gefesture_create_event block="on Gesture|%gesture"
     export function onGesture(gesture: EFGesture, handler: Action) {
         control.onEvent(gestureEventId, gesture, handler);
-        if (!paj7620) {
+        //if (!paj7620) {
             paj7620.init();
             control.inBackground(() => {
                 while (true) {
@@ -88,7 +88,7 @@ namespace gesture {
                     basic.pause(50);
                 }
             })
-        }
+        //}
     }
 
 
